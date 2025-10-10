@@ -1,0 +1,31 @@
+.my-flex {
+    display: flex;
+}
+
+.test-div {
+    background: pink;
+    padding: 20px;
+    margin: 10px;
+}
+
+H2 {
+    color: green;
+}
+
+.test-div {
+    color: slateblue;
+    text-align: center;
+}
+
+.special h2 {
+    color: blue;
+    text-align: center;
+}
+
+.special button {
+    background-color: Yellow;
+}
+
+button {
+    background-color: Orange;
+}

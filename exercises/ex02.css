@@ -1,0 +1,32 @@
+body {background: pink; 
+    color: purple;
+    padding-top: 20px; 
+    margin: 50px;
+}
+
+.highlight01 {
+    border: 2px;
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+    Background-color: yellow
+}
+
+.highlight02 {
+    border: 2px;
+    padding: 20px;
+    width: 200px;
+    display: inline-block;
+    Background-color: yellow;
+    text-align: center;
+}
+
+.highlight03 {
+    border: 2px;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    Background-color: yellow;
+    text-align: center;
+}
+
