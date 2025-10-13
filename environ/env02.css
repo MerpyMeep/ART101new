@@ -1,5 +1,21 @@
+#clouds {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    padding: 10px;
+    z-index: 100;
+}
+
+.cloud {
+  width: 120px;
+  height: auto;
+  opacity: 0.85;
+}
+
 body {
-    background-image: url('https://www.goodfreephotos.com/albums/united-states/texas/austin/blue-flower-field-in-austin-texas.jpg');
+    background-image: url(exercises/images/blue-flowers.jpg);
     background-size: cover;
     background-position: center;
     color: #2e2e2e;
@@ -44,4 +60,18 @@ body {
     background: rgba(255, 255, 255, 0.85);
     border: 2px solid rgba(200, 170, 130, 0.9);
     border-radius: 10px;
+}
+
+#trees {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+.tree {
+  width: 100px;
+  height: auto;
+  opacity: 0.9;
 }
