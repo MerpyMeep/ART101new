@@ -1,14 +1,18 @@
 body {
     background-image: url(https://www.goodfreephotos.com/albums/united-states/texas/austin/blue-flower-field-in-austin-texas.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center top;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #2e2e2e;
     font-family: 'Georgia', serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 100px;
 }
 
 #clouds {
@@ -27,64 +31,90 @@ body {
   opacity: 0.9;
 }
 
-.intro {
-    background: rgba(255, 255, 255, 0.7);
-    margin: 10% auto 2px;
-    width: 80%;
-    padding: 2px;
-    border-radius: 1px;
-    box-shadow: 0 0 20px rgba(255, 200, 150, 0.3);
-}
-
-.character{
+#dynamic-content-wrapper {
+    background: rgba(255, 255, 255, 0.75);
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto 80px;
+    padding: 40px 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
     text-align: center;
-    margin-top: 30px;
+    z-index: 10;
+    position: relative;
 }
 
-.character img {
-    display: block;
-    margin: 0 auto;
-    width: 750px;
+#dynamic-content-wrapper h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2e2e2e;
+}
+
+#dynamic-content-wrapper h3 {
+    font-size: 1.8rem;
+    margin-top: 25px;
+    color: #333;
+}
+
+#dynamic-content-wrapper p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+#elements p {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 14px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#characters img {
+    width: 60%;
+    max-width: 800px;
     height: auto;
-    border: 3px solid rgba(255, 255, 255, 0.8);
-    border-radius: 1px;
+    margin: 20px 0 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.caption {
-    display: block;
-    margin: 15px auto 50px;
-    padding: 10px 20px;
-    width: fit-content;
-    max-width: 80%;
-    text-align: center;
+#characters p {
     font-style: italic;
     color: #5a4a42;
-    background: rgba(255, 255, 255, 0.85);
-    border: 2px solid rgba(200, 170, 130, 0.9);
-    border-radius: 10px;
+    font-size: 1.2rem;
 }
 
-#trees {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  pointer-events: none; /* so trees don't block clicking on content */
-  z-index: 1;
-}
-
-.tree {
-  position: absolute;
-  bottom: 0;
-  width: 600px;
+.random-flower {
+  width: 400px;
   height: auto;
+  margin: 20px auto;
+  display: block;
 }
 
-.tree.left {
-  left: 0;
+.decor-butterfly {
+  position: fixed;
+  top: 50%;                 
+  transform: translateY(-50%);
+  width: 200px;
+  height: auto;
+  opacity: 0.85;
+  z-index: 2;
+  pointer-events: none;
 }
 
-.tree.right {
-  right: 0;
+.decor-left {
+  left: 20px;
+  top: 45%;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.decor-right {
+  right: 20px;
+  top: 55%;
+  transform: translateY(-50%);
 }
