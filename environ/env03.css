@@ -7,37 +7,36 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
-    overflow-y: auto; /* allow page scroll */
+    overflow-y: auto; 
 }
 
-/* Wisteria wrapper ensures image fills top and droops naturally */
+
 #wisteria-wrapper {
-    position: fixed;   /* stays in place */
+    position: fixed;   
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;     /* how far it droops over text */
-    overflow: hidden;  /* crop edges */
+    height: 400px;     
+    overflow: hidden;  
     z-index: 1;
     pointer-events: none;
 }
 
 #wisteria-border {
     position: absolute;
-    top: -50px;         /* move image up slightly to make it appear bigger */
+    top: -50px;         
     left: 50%;
     transform: translateX(-50%);
-    width: 120%;        /* extend beyond edges */
-    height: auto;       /* maintain aspect ratio */
+    width: 120%;        
+    height: auto;       
 }
 
-/* Scrollable content */
 #dynamic-content-wrapper {
     position: relative;
     z-index: 5;
     width: 90%;
     max-width: 1000px;
-    margin: 250px auto 80px; /* pushed down so flowers droop over */
+    margin: 250px auto 80px; 
     padding: 40px 40px 60px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 20px;
