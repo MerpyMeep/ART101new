@@ -43,3 +43,8 @@ $(document).ready(function () {
     $("body").append(leftButterfly);
     $("body").append(rightButterfly);
 });
+
+title.style.textAlign = 'center';
+description.style.textAlign = 'center';
+elements.style.textAlign = 'center';
+randomFlower.style.textAlign = 'center';
