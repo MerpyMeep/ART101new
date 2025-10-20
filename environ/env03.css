@@ -65,7 +65,7 @@ body {
 }
 
 #elements p {
-    display: inline-block;
+    display: block;
     margin: 5px 10px;
     padding: 8px 14px;
     background-color: rgba(240, 240, 240, 0.8);
