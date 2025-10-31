@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
     overflow-y: auto; 
 }
-
 #wisteria-wrapper {
     position: fixed;   
     top: 0;
@@ -20,7 +19,6 @@ body {
     z-index: 1;
     pointer-events: none;
 }
-
 #wisteria-border {
     position: absolute;
     top: -50px;         
@@ -29,7 +27,6 @@ body {
     width: 120%;        
     height: auto;       
 }
-
 #dynamic-content-wrapper {
     position: relative;
     text-align: center;
@@ -42,28 +39,24 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.25);
 }
-
 #dynamic-content-wrapper h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
     color: #2e2e2e;
 }
-
 #dynamic-content-wrapper h3 {
     font-size: 1.8rem;
     text-align: center;
     margin-top: 25px;
     color: #333;
 }
-
 #dynamic-content-wrapper p {
     font-size: 1.2rem;
     text-align: center;
     line-height: 1.6;
     color: #444;
 }
-
 #elements p {
     display: block;
     margin: 5px 10px;
@@ -75,7 +68,6 @@ body {
     color: #333;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
 #elements {
     display: flex;
     flex-direction: column; /* stack heading + buttons */
@@ -83,13 +75,11 @@ body {
     gap: 15px;
     margin-top: 20px;
 }
-
 #elements h3 {
     margin-bottom: 10px;
     font-size: 1.8rem;
     color: #2e2e2e;
 }
-
 .element-button {
     background-color: rgba(240, 240, 240, 0.85);
     border: 2px solid #c9a0dc;
@@ -100,12 +90,10 @@ body {
     text-align: center;
     transition: transform 0.2s, background 0.3s;
 }
-
 .element-button:hover {
     background-color: rgba(255, 240, 255, 0.9);
     transform: scale(1.1);
 }
-
 #back-button {
     margin-top: 10px;
     background-color: rgba(255, 200, 200, 0.85);
@@ -117,12 +105,10 @@ body {
     text-align: center;
     transition: transform 0.2s, background 0.3s;
 }
-
 #back-button:hover {
     background-color: rgba(255, 220, 220, 0.95);
     transform: scale(1.05);
 }
-
 #characters img {
     width: 60%;
     max-width: 800px;
@@ -133,21 +119,18 @@ body {
     margin-right: auto;
     text-align: center;
 }
-
 #characters p {
     font-style: italic;
     color: #5a4a42;
     font-size: 1.2rem;
     text-align: center;
 }
-
 .random-flower {
   width: 400px;
   height: auto;
   margin: 20px auto;
   display: block;
 }
-
 .decor-butterfly {
     position: fixed;
     width: 150px;
@@ -156,13 +139,11 @@ body {
     pointer-events: none;
     opacity: 0.85;
 }
-
 .decor-left {
     left: 20px;
     top: 45%;
     transform: scaleX(-1);
 }
-
 .decor-right {
     right: 20px;
     top: 55%;
