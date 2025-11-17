@@ -29,7 +29,7 @@ function changeEnvironmentByElement(elementType) {
 
     switch(elementType) {
         case "Fire":
-            imgUrl = "https://media.istockphoto.com/id/183862714/photo/red-hot-flames-of-fire-isolated-on-black.jpg";
+            imgUrl = "https://media.istockphoto.com/id/183862714/photo/red-hot-flames-of-fire-isolated-on-black.jpg?s=612x612&w=0&k=20&c=5O7-wYB8eTRgpP-Do408bWpwVR9Cd9XcYNWUdXiPgPk=";
             descriptionText = "Sparks and flames dance across the petals, warming the field.";
             gradient = "linear-gradient(to bottom, #ff9a9e, #fecfef)";
             break;
@@ -39,7 +39,7 @@ function changeEnvironmentByElement(elementType) {
             gradient = "linear-gradient(to bottom, #a1c4fd, #c2e9fb)";
             break;
         case "Wind":
-            imgUrl = "https://media.istockphoto.com/id/499376168/photo/stormy-clouds-dramatic-sky.jpg";
+            imgUrl = "https://media.istockphoto.com/id/499376168/photo/stormy-clouds-dramatic-sky.jpg?s=612x612&w=0&k=20&c=sl4QfaE5kSbDfaOx42hhelyIKo6vglHBcJJ9CFFkjDE=";
             descriptionText = "The breeze carries petals in a delicate dance.";
             gradient = "linear-gradient(to bottom, #d4fc79, #96e6a1)";
             break;
