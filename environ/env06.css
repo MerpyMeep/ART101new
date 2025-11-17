@@ -1,4 +1,4 @@
-body {
+body { 
     margin: 0;
     font-family: 'Georgia', serif;
     background-image: url(https://www.goodfreephotos.com/albums/united-states/texas/austin/blue-flower-field-in-austin-texas.jpg);
@@ -8,6 +8,8 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
 }
+
+/* Wisteria */
 #wisteria-wrapper {
     position: fixed;   
     top: 0;
@@ -19,16 +21,15 @@ body {
     pointer-events: none;
 }
 #wisteria-border {
-    position: fixed;
-    top: -40px;         
+    position: absolute;
+    top: -50px;         
     left: 50%;
     transform: translateX(-50%);
     width: 120%;        
-    height: auto;   
-    pointer-events: none;
-    z-index: 3;
-    transition: transform 0.15s linear;    
+    height: auto;       
 }
+
+/* Main content wrapper */
 #dynamic-content-wrapper {
     position: relative;
     text-align: center;
@@ -41,36 +42,11 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0,0,0,0.25);
 }
-#dynamic-content-wrapper h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2e2e2e;
-}
-#dynamic-content-wrapper h3 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-top: 25px;
-    color: #333;
-}
-#dynamic-content-wrapper p {
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.6;
-    color: #444;
-}
-#elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-#elements h3 {
-    margin-bottom: 10px;
-    font-size: 1.8rem;
-    color: #2e2e2e;
-}
+#dynamic-content-wrapper h2 { font-size: 2.5rem; margin-bottom: 20px; color: #2e2e2e; }
+#dynamic-content-wrapper h3 { font-size: 1.8rem; margin-top: 25px; color: #333; }
+#dynamic-content-wrapper p { font-size: 1.2rem; line-height: 1.6; color: #444; }
+
+#elements { display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 20px; }
 .element-button {
     background-color: rgba(240, 240, 240, 0.85);
     border: 2px solid #c9a0dc;
@@ -81,41 +57,11 @@ body {
     text-align: center;
     transition: transform 0.2s, background 0.3s;
 }
-.element-button:hover {
-    background-color: rgba(255, 240, 255, 0.9);
-    transform: scale(1.1);
-}
-#back-button {
-    margin-top: 10px;
-    background-color: rgba(255, 200, 200, 0.85);
-    border: 2px solid #c98f8f;
-    border-radius: 12px;
-    padding: 8px 18px;
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-    transition: transform 0.2s, background 0.3s;
-}
-#back-button:hover {
-    background-color: rgba(255, 220, 220, 0.95);
-    transform: scale(1.05);
-}
-#characters img {
-    width: 60%;
-    max-width: 800px;
-    height: auto;
-    margin: 20px 0 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-#characters p {
-    font-style: italic;
-    color: #5a4a42;
-    font-size: 1.2rem;
-    text-align: center;
-}
+.element-button:hover { background-color: rgba(255, 240, 255, 0.9); transform: scale(1.1); }
+
+#characters img { width: 60%; max-width: 800px; height: auto; margin: 20px auto; display: block; }
+#characters p { font-style: italic; color: #5a4a42; font-size: 1.2rem; }
+
 .decor-butterfly {
     position: fixed;
     width: 150px;
@@ -124,15 +70,8 @@ body {
     cursor: pointer;
     transition: transform 0.3s;
 }
-.decor-left {
-    left: 20px;
-    top: 45%;
-    transform: scaleX(-1);
-}
-.decor-right {
-    right: 20px;
-    top: 55%;
-}
-.decor-butterfly:hover {
-    transform: scale(1.3);
-}
+.decor-left { left: 20px; top: 45%; transform: scaleX(-1); }
+.decor-right { right: 20px; top: 55%; }
+.decor-butterfly:hover { transform: scale(1.5); }
+
+.random-flower { width: 400px; height: auto; transition: all 0.3s ease; }
