@@ -114,7 +114,7 @@ $(document).on("keydown", function(e) {
     if(e.key==="ArrowLeft") $("body").css("background-image","url('https://www.goodfreephotos.com/albums/united-states/texas/austin/blue-flower-field-in-austin-texas.jpg')");
     if(e.key==="ArrowRight") $("body").css("background-image","url('https://images.unsplash.com/photo-1577862236121-c237c73ef4ed?fm=jpg&q=60&w=3000')");
     if(e.key==="ArrowUp") $("body").css("background-image","url('https://www.marthastewart.com/thmb/EEaDEMfBcuwsSS1D9kq8_gTm2F4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/best-fall-flowers-garden-lead-getty-0823-7eedbcc7ada245c4a1156c838a173c08.jpg')");
-    if(e.key==="ArrowDown") $("body").css("background-image","url('https://images.stockcake.com/public/e/9/5/e95a804b-710c-4543-b33b-1044d660b512_large/winter-bloom-beauty-stockcake.jpg')");
+    if(e.key==="ArrowDown") $("body").css("background-image","url('https://images.unsplash.com/photo-1454923077067-323a62ed11e1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ludGVyJTIwZmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000')");
 });
 
 // --- Petals function ---
