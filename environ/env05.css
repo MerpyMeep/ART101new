@@ -19,12 +19,15 @@ body {
     pointer-events: none;
 }
 #wisteria-border {
-    position: absolute;
-    top: -50px;         
+    position: fixed;
+    top: -40px;         
     left: 50%;
     transform: translateX(-50%);
     width: 120%;        
-    height: auto;       
+    height: auto;   
+    pointer-events: none;
+    z-index: 3;
+    transition: transform 0.15s linear;    
 }
 #dynamic-content-wrapper {
     position: relative;
