@@ -11,22 +11,22 @@ body {
 
 /* Wisteria */
 #wisteria-wrapper {
-    position: fixed;   /* stays on screen when scrolling */
+    position: fixed;   
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;      /* let the image determine height */
+    height: 400px;     
+    overflow: hidden;  
     z-index: 1;
     pointer-events: none;
-    overflow: visible; /* allow full image to show */
 }
-
 #wisteria-border {
-    width: 100%;       /* fill width of the page */
-    height: auto;      /* maintain aspect ratio */
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: -50px;         
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;        
+    height: auto;       
 }
 
 /* Main content wrapper */
